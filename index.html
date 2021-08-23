@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Keywords" content="Cars" />
+		<meta name="Description" content="Tasting the cars" />
+
+		<title>Tasting Cars</title>
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Overpass"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="icon/fa/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- sidebar content -->
+		<div
+			class="offcanvas offcanvas-start w-100"
+			data-bs-scroll="true"
+			tabindex="-1"
+			id="offcanvasWithBothOptions"
+			aria-labelledby="offcanvasWithBothOptionsLabel"
+		>
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+					Menu
+				</h5>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<nav class="navbar navbar-light">
+					<ul class="navbar-nav">
+						<li class="nav-item py-2">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#"
+							>
+								<i class="far fa-home-blank me-1"></i> Home
+							</a>
+						</li>
+						<li class="nav-item py-2">
+							<a class="nav-link" href="#car">
+								<i class="far fa-car me-1"></i> Cars
+							</a>
+						</li>
+						<li class="nav-item py-2">
+							<a class="nav-link" href="#news">
+								<i class="far fa-book-open-reader me-1"></i>
+								News
+							</a>
+						</li>
+						<li class="nav-item py-2">
+							<a class="nav-link" href="#about">
+								<i class="far fa-circle-info me-1"></i> About
+							</a>
+						</li>
+						<li class="nav-item py-2">
+							<a class="nav-link" href="#contact">
+								<i class="far fa-message-smile me-1"></i>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="d-flex py-2">
+					<button type="button" class="btn btn-primary px-3">
+						Main Page <i class="far fa-chevron-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- end sidebar content -->
+
+		<!-- navbar -->
+		<nav id="navtop" class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><img
+						class="me-3"
+						width="32"
+						src="img/logo-white.png"
+						alt="logo"
+						srcset=""
+					/>
+					TastingCars
+				</a>
+
+				<a
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasWithBothOptions"
+					aria-controls="offcanvasWithBothOptions"
+				>
+					<span class="far fa-bars"></span>
+				</a>
+
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#"
+							>
+								<i class="far fa-home-blank me-1"></i> Home
+							</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#car">
+								<i class="far fa-car me-1"></i> Cars
+							</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#news">
+								<i class="far fa-book-open-reader me-1"></i>
+								News
+							</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#about">
+								<i class="far fa-circle-info me-1"></i> About
+							</a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#contact">
+								<i class="far fa-message-smile me-1"></i>
+								Contact
+							</a>
+						</li>
+					</ul>
+					<div class="d-flex ms-3">
+						<button type="button" class="btn btn-primary px-3">
+							Main Page <i class="far fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- end navbar -->
+
+		<!-- Jumbotron -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="row jumbo">
+					<div class="col-md-6 pt-3 text-white herocenter">
+						<h1 class="display-">
+							<span class="font-jumbotron">
+								The Biggest Car Seller
+							</span>
+						</h1>
+						<p class="lead text-secondary">
+							You can find the car you are looking for in just one
+							place, with various brands, types, colors and taste.
+						</p>
+						<br />
+						<a
+							href="#bestcar"
+							type="button"
+							class="btn btn-primary me-2"
+						>
+							Explore Cars
+						</a>
+						<a
+							href="#contact"
+							type="button"
+							class="btn btn-outline-primary"
+						>
+							Contact Us
+						</a>
+					</div>
+					<div class="col-md-6">
+						<div id="jumbo" class="splide">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img
+											class="img-fluid"
+											src="img/car1.png"
+											alt="car"
+										/>
+									</li>
+									<li class="splide__slide">
+										<img
+											class="img-fluid"
+											src="img/car2.png"
+											alt="car"
+										/>
+									</li>
+									<li class="splide__slide">
+										<img
+											class="img-fluid"
+											src="img/car3.png"
+											alt="car"
+										/>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end jumbotron -->
+
+		<!-- content -->
+
+		<!-- best selling -->
+		<div id="bestcar" class="container text-center py-5">
+			<h2 class="mb-3">Best Selling Cars</h2>
+			<p class="lead text-secondary">
+				Best selling cars you might be interested in
+			</p>
+
+			<div class="card">
+				<div id="bestselling" class="splide px-3 pt-3 pb-4">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car1.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car ABC</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car2.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car DEF</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car3.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car GHI</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car4.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car JKL</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car5.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car MNO</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car6.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car PQR</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car7.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car STU</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="card" style="width: 15rem">
+									<img
+										height="140"
+										src="img/catalog/car8.png"
+										class="card-img-top bg-greenblue"
+										alt="car"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Car VWX</h5>
+										<div class="d-inline-flex w-100 pb-2">
+											<small>
+												<p>Series XXX</p>
+											</small>
+											<small class="fw-bold ms-auto">
+												<p>$30000</p>
+											</small>
+										</div>
+										<button
+											class="btn btn-outline-success me-2"
+										>
+											<i class="far fa-bookmark"></i>
+										</button>
+										<button
+											type="button"
+											class="btn btn-primary"
+										>
+											More detail
+											<i class="far fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end best selling -->
+
+		<!-- favorites -->
+		<div id="car" class="container text-center py-5">
+			<h2 class="mb-3">Find your favorite cars</h2>
+			<p class="lead text-secondary">
+				Your choice, your taste and your freedom
+			</p>
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="card p-3 bg-greenblue text-white text-start">
+						<h5 class="pb-3 text-white text-start">
+							<i class="far fa-star me-2"></i> Choose your
+							favorite car
+						</h5>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car1.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car ABC</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car2.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car DEF</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car3.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car GHI</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car4.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car JKL</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car5.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car MNO</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car6.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car PQR</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car7.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car STU</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car8.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car VWX</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car9.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>Car YZ1</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br />
+						<h6 class="border-start border-2 border-white ps-3">
+							Category
+						</h6>
+						<br />
+						<div class="d-inline-flex">
+							<div class="input-group mb-3 me-3">
+								<label
+									class="input-group-text"
+									for="inputGroupSelect01"
+								>
+									Type
+								</label>
+								<select
+									class="form-select"
+									id="inputGroupSelect01"
+								>
+									<option selected>Choose...</option>
+									<option value="1">XXX</option>
+									<option value="2">YYY</option>
+									<option value="3">ZZZ</option>
+								</select>
+							</div>
+							<div class="input-group mb-3">
+								<label
+									class="input-group-text"
+									for="inputGroupSelect01"
+								>
+									Colour
+								</label>
+								<select
+									class="form-select"
+									id="inputGroupSelect01"
+								>
+									<option selected>Choose...</option>
+									<option value="1">Red</option>
+									<option value="2">Black</option>
+									<option value="3">Blue</option>
+									<option value="4">Orange</option>
+									<option value="5">White</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-inline-flex">
+							<span class="me-2">AT</span>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="flexSwitchCheckDefault"
+								/>
+								<label
+									class="form-check-label"
+									for="flexSwitchCheckDefault"
+								>
+									MT
+								</label>
+							</div>
+						</div>
+						<div class="d-flex w-100 py-2">
+							<button
+								type="button"
+								class="btn btn-primary mx-auto px-5"
+							>
+								Save your favourites
+								<i class="far fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card p-3 mb-4 text-start">
+						<h5 class="pb-3 text-start">
+							<i class="far fa-heart me-2"></i> Choose your taste
+						</h5>
+						<div class="d-inline-flex">
+							<div class="input-group mb-3 me-3">
+								<label
+									class="input-group-text"
+									for="inputGroupSelect01"
+								>
+									Type
+								</label>
+								<select
+									class="form-select"
+									id="inputGroupSelect01"
+								>
+									<option selected>Choose...</option>
+									<option value="1">XXX</option>
+									<option value="2">YYY</option>
+									<option value="3">ZZZ</option>
+								</select>
+							</div>
+							<div class="input-group mb-3">
+								<label
+									class="input-group-text"
+									for="inputGroupSelect01"
+								>
+									Colour
+								</label>
+								<select
+									class="form-select"
+									id="inputGroupSelect01"
+								>
+									<option selected>Choose...</option>
+									<option value="1">Red</option>
+									<option value="2">Black</option>
+									<option value="3">Blue</option>
+									<option value="4">Orange</option>
+									<option value="5">White</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car1.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>DCD Style</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car7.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>KKL Style</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<img
+									class="img-fluid img-thumbnail image"
+									src="img/catalog/car4.png"
+									alt=""
+								/>
+								<div class="d-inline-flex w-100">
+									<small>ZERO Style</small>
+									<div class="d-inline-flex ms-auto">
+										<small>Select</small>
+										<input
+											class="form-check-input ms-2"
+											type="checkbox"
+											value=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h6 class="border-start border-2 border-success ps-3">
+							Machine
+						</h6>
+						<br />
+						<div class="d-flex">
+							<div class="input-group mb-3 me-3">
+								<label
+									class="input-group-text"
+									for="inputGroupSelect01"
+								>
+									Machine CC
+								</label>
+								<select
+									class="form-select"
+									id="inputGroupSelect01"
+								>
+									<option selected>Choose...</option>
+									<option value="1">6000</option>
+									<option value="2">7000</option>
+									<option value="3">8000</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-inline-flex">
+							<span class="me-2">AT</span>
+							<div class="form-check form-switch">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="flexSwitchCheckDefault"
+								/>
+								<label
+									class="form-check-label"
+									for="flexSwitchCheckDefault"
+								>
+									MT
+								</label>
+							</div>
+						</div>
+						<div class="d-flex w-100 py-2">
+							<button
+								type="button"
+								class="btn btn-primary mx-auto px-5"
+							>
+								Save your taste
+								<i class="far fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+
+					<div id="contact" class="card p-3 text-start">
+						<h5 class="pb-3 text-start">
+							<i class="far fa-share-alt me-2"></i> Stay
+							connected!
+						</h5>
+						<span class="text-secondary mb-3"
+							>Subscribe to Email Alerts by submitting your email
+							address.</span
+						>
+						<div class="d-inline-flex">
+							<div class="input-group mb-3">
+								<span
+									class="input-group-text"
+									id="basic-addon1"
+								>
+									Email
+								</span>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="example@email.com"
+									aria-label="Email"
+									aria-describedby="basic-addon1"
+								/>
+							</div>
+						</div>
+						<div class="d-flex w-100 py-2">
+							<button
+								type="button"
+								class="btn btn-primary mx-auto px-5"
+							>
+								Subscribe
+								<i class="far fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end favorites -->
+
+		<!-- news -->
+		<div id="news" class="container text-center py-5">
+			<h2 class="mb-3">Stay up to date</h2>
+			<p class="lead text-secondary">
+				Always stay up to date with our latest product, type, category
+				and more.
+			</p>
+			<div class="card p-3 mx-auto mb-5">
+				<div class="card border-0 rounded-0">
+					<div
+						class="
+							card-header
+							border-bottom border-2 border-primary
+							d-flex
+							rounded-top
+						"
+					>
+						<div class="me-auto text-start">
+							<h5 class="">News</h5>
+							<small class="text-secondary">
+								Updated 5 minutes ago
+							</small>
+						</div>
+						<div>
+							<button type="button" class="btn btn-primary px-4">
+								<i class="far fa-sort-alt me-2"></i>
+								Sort
+							</button>
+						</div>
+					</div>
+					<ul class="list-group list-group-flush text-start">
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-group-item px-0">
+							<a
+								href="#"
+								class="
+									nav-link
+									border-start border-success border-2
+									d-flex
+								"
+							>
+								<span class="text-dark">
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.
+								</span>
+								<span class="ms-auto d-flex">
+									<small class="text-secondary mx-3">
+										22/08/2021 10.30AM
+									</small>
+									<i
+										class="
+											far
+											fa-chevron-right
+											text-primary
+										"
+									></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- endnews -->
+
+		<!-- footer -->
+		<div id="about" class="card bg-darkgreenblue rounded-0 py-5">
+			<div class="container text-white">
+				<div class="row">
+					<div class="col-md-6 mb-5">
+						<ul class="list-group bg-transparent rounded-0">
+							<li class="list-group-item bg-transparent border-0">
+								<a class="navbar-brand text-white" href="#"
+									><img
+										class="me-3"
+										width="32"
+										src="img/logo-white.png"
+										alt="logo"
+										srcset=""
+									/>
+									TastingCars
+								</a>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<a class="nav-link text-white px-0" href="#">
+									<i class="fas fa-map-marker me-2"></i>
+									Yanagawamachi Tenjimmachi 116-1046,
+									Date-shi, Fukushima, Japan +8132-800-9974
+								</a>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<a class="nav-link text-white px-0" href="#">
+									<i class="fas fa-phone me-2"></i>
+									+8132-800-9974
+								</a>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<a class="nav-link text-white px-0" href="#">
+									<i class="fas fa-envelope me-2"></i>
+									admin@tastingcars.com
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 mb-5 ps-0">
+						<ul
+							class="
+								list-group
+								bg-transparent
+								border-start border-2 border-primary
+								rounded-0
+								ps-2
+							"
+						>
+							<li
+								class="
+									list-group-item
+									bg-transparent
+									border-0
+									text-white
+								"
+							>
+								<h5>About Us</h5>
+							</li>
+							<li
+								class="
+									list-group-item
+									bg-transparent
+									border-0
+									text-white
+								"
+							>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Et quisquam est ea ipsam
+									consequuntur officiis hic commodi voluptate
+									deleniti natus earum sit, expedita ut itaque
+									aliquam saepe. Vel, aperiam! Esse.
+								</p>
+							</li>
+							<li class="list-group-item bg-transparent border-0">
+								<div class="d-inline-flex fs-2">
+									<a
+										class="nav-link text-white px-0"
+										href="#"
+									>
+										<i class="fab fa-instagram me-3"></i>
+									</a>
+									<a
+										class="nav-link text-white px-0"
+										href="#"
+									>
+										<i class="fab fa-facebook me-3"></i>
+									</a>
+									<a
+										class="nav-link text-white px-0"
+										href="#"
+									>
+										<i
+											class="fab fa-telegram-plane me-3"
+										></i>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-white mx-auto">
+				Copyright &copy; <span id="year"></span> TastingCars
+			</div>
+
+			<!-- Back to top button -->
+			<div class="d-inline-flex">
+				<button
+					id="button"
+					class="btn btn-primary fixed-bottom ms-auto"
+					style="
+						width: 50px;
+						height: 50px;
+						margin-right: 12px;
+						margin-bottom: 12px;
+					"
+				>
+					<i class="fas fa-chevron-up"></i>
+				</button>
+			</div>
+		</div>
+		<!-- end footer -->
+
+		<!-- end content -->
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+		<script>
+			// change navbar background on scroll
+			$(function () {
+				$(document).scroll(function () {
+					var $nav = $("#navtop");
+					$nav.toggleClass(
+						"bg-greenblue",
+						$(this).scrollTop() > $nav.height()
+					);
+				});
+			});
+
+			// copyright year
+			document.getElementById("year").innerHTML =
+				new Date().getFullYear();
+
+			// back to top button
+			var btn = $("#button");
+
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 300) {
+					btn.removeClass("visually-hidden");
+				} else {
+					btn.addClass("visually-hidden");
+				}
+			});
+
+			btn.on("click", function (e) {
+				e.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, "300");
+			});
+		</script>
+
+		<script>
+			new Splide("#jumbo", {
+				cover: true,
+				heightRatio: 0.5,
+				autoplay: true,
+				type: "loop",
+			}).mount();
+		</script>
+
+		<script>
+			new Splide("#bestselling", {
+				perPage: 4,
+				perMove: 1,
+				focus: "center",
+				fixedWidth: "14rem",
+				autoplay: true,
+				type: "loop",
+				gap: "2rem",
+			}).mount();
+		</script>
+	</body>
+</html>
